@@ -73,23 +73,19 @@ def predict(sender_upi_id, receiver_upi_id, amount_inr):
 # Membuat antarmuka Streamlit
 st.title("Prediksi Status Transaksi UPI")
 
-# Membuat dua kolom yang sejajar
 col1, col2 = st.columns(2)
 
 with col1:
-    st.text_input("Sender UPI ID:", key="sender_upi_id")
-    st.text_input("Receiver UPI ID:", key="receiver_upi_id")
+    sender_upi_id = st.text_input("Sender UPI ID:")
+    amount_inr = st.number_input("Amount (INR):", min_value=0.0, step=0.01)
 
 with col2:
-    st.number_input("Amount (INR):", min_value=0.0, step=0.01, key="amount_inr")
+    
+    receiver_upi_id = st.text_input("Receiver UPI ID:")
 
 st.markdown("---")  # Garis pemisah
 
 if st.button("Prediksi"):
-    sender_upi_id = st.session_state.sender_upi_id
-    receiver_upi_id = st.session_state.receiver_upi_id
-    amount_inr = st.session_state.amount_inr
-
     try:
         result = predict(sender_upi_id, receiver_upi_id, amount_inr)
         if result == 1:
@@ -100,3 +96,21 @@ if st.button("Prediksi"):
             st.error("Transaksi Gagal")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
+
+# Informasi tambahan di bagian bawah
+with st.container():
+    st.markdown('<div class="information-box">', unsafe_allow_html=True)
+    st.header("Informasi Tambahan")
+    st.markdown(
+        """
+        <p>Aplikasi ini menggunakan model machine learning untuk memprediksi status transaksi UPI
+        berdasarkan informasi UPI ID pengirim, UPI ID penerima, dan jumlah transaksi. Prediksi ini
+        bersifat eksperimental dan hanya untuk tujuan edukasi.</p>
+        
+        <p>Penggunaan aplikasi ini tidak menjamin keakuratan 100% dari hasil prediksi yang diberikan.
+        Pastikan untuk memverifikasi hasil prediksi dengan data nyata dan menggunakan aplikasi
+        sesuai dengan kebutuhan dan konteks yang tepat.</p>
+        """,
+        unsafe_allow_html=True
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
