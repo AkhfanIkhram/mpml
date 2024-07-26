@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 # Mengatur tema dan konfigurasi halaman
 st.set_page_config(
     page_title="Prediksi Status Transaksi UPI",
-    page_icon="💸",
     layout="centered",
     initial_sidebar_state="expanded",
 )
@@ -98,7 +97,7 @@ if st.button("Prediksi"):
             st.image("https://www.example.com/success-image.png", use_column_width=True)  # Ganti dengan URL gambar sukses
             st.success("Transaksi Sukses 🎉")  # Menambahkan emoji untuk sukses
         else:
-            st.image("https://www.example.com/failure-image.png", use_column_width=True)  # Ganti dengan URL gambar gagal
+            st.image("https://png.pngtree.com/png-clipart/20210808/original/pngtree-failed-icon-png-image_6612292.jpg", use_column_width=True)  # Ganti dengan URL gambar gagal
             st.error("Transaksi Gagal 😞")  # Menambahkan emoji untuk gagal
     except Exception as e:
         st.error(f"Error during prediction: {e}")
