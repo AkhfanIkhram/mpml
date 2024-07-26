@@ -1,36 +1,75 @@
 body {
     background-image: url('https://img.lovepik.com/background/20211021/medium/lovepik-marble-texture-background-image_401577555.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    height: 100vh;
-    margin: 0;
+    background-size: cover; /* Menutupi seluruh layar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    color: white; /* Warna teks putih untuk kontras */
+    font-family: 'Arial', sans-serif; /* Font sederhana dan bersih */
+    height: 100vh; /* Tinggi penuh viewport */
+    margin: 0; /* Menghilangkan margin default */
 }
 
-.container {
-    display: flex; /* Menggunakan Flexbox */
-    justify-content: space-between; /* Ruang yang sama di antara kolom */
-    padding: 20px; /* Spasi di sekitar konten */
-    max-width: 1200px; /* Lebar maksimal kontainer */
+.stApp {
+    background-color: rgba(0, 0, 0, 0.8); /* Meningkatkan opasitas latar belakang agar teks lebih jelas */
+    padding: 30px; /* Spasi lebih banyak di dalam konten */
+    border-radius: 15px; /* Sudut membulat lebih besar */
+    max-width: 900px; /* Lebar maksimal konten */
     margin: auto; /* Menyelaraskan konten ke tengah */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Bayangan lebih besar dan lebih lembut */
+    backdrop-filter: blur(8px); /* Efek blur pada latar belakang konten */
 }
 
-.column {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 30%; /* Lebar maksimal setiap kolom */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700; /* Warna emas untuk judul */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Bayangan teks yang lebih jelas untuk meningkatkan keterbacaan */
 }
 
-h2 {
-    color: #FFD700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.stButton > button {
+    background-color: #6c5ce7; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    font-weight: bold; /* Teks tebal */
+    border-radius: 12px; /* Sudut membulat lebih besar */
+    padding: 12px 24px; /* Spasi lebih banyak di dalam tombol */
+    border: none; /* Menghilangkan border default */
+    cursor: pointer; /* Kursor pointer saat hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi warna dan efek transform */
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
+.stButton > button:hover {
+    background-color: #5a4a9f; /* Warna latar belakang tombol saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.stTextInput > div > label, .stNumberInput > div > label {
+    font-weight: bold; /* Teks label tebal */
+    color: white; /* Warna teks label */
+}
+
+.stTextInput input, .stNumberInput input {
+    border-radius: 12px; /* Sudut membulat lebih besar */
+    border: 1px solid #dfe6e9; /* Border abu-abu terang */
+    padding: 12px; /* Spasi lebih banyak di dalam input */
+    width: 100%; /* Lebar penuh input */
+    box-sizing: border-box; /* Padding tidak mempengaruhi lebar elemen */
+    background-color: #ffffff; /* Latar belakang putih untuk input */
+    color: #333; /* Warna teks input */
+    font-size: 16px; /* Ukuran font lebih besar untuk keterbacaan */
+}
+
+.information-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparansi putih sedikit lebih jelas */
+    padding: 20px; /* Spasi di dalam kotak informasi */
+    border-radius: 15px; /* Sudut membulat lebih besar */
+    color: #333; /* Warna teks kotak informasi */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih halus */
+    margin-top: 30px; /* Jarak atas antara kotak informasi dan elemen lainnya */
+}
+
+.information-box h2 {
+    color: #6c5ce7; /* Warna judul dalam kotak informasi */
+}
+
+.information-box p {
+    font-size: 16px; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris teks */
 }
