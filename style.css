@@ -10,18 +10,18 @@ body {
 }
 
 .stApp {
-    background-color: rgba(0, 0, 0, 0.7); /* Lebih gelap untuk meningkatkan keterbacaan */
+    background-color: rgba(0, 0, 0, 0.8); /* Meningkatkan opasitas latar belakang agar teks lebih jelas */
     padding: 30px; /* Spasi lebih banyak di dalam konten */
     border-radius: 15px; /* Sudut membulat lebih besar */
     max-width: 900px; /* Lebar maksimal konten */
     margin: auto; /* Menyelaraskan konten ke tengah */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Bayangan lebih besar dan lebih lembut */
-    backdrop-filter: blur(10px); /* Efek blur pada latar belakang konten */
+    backdrop-filter: blur(8px); /* Efek blur pada latar belakang konten */
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #FFD700; /* Warna emas untuk judul */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Bayangan teks yang lebih halus */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Bayangan teks yang lebih jelas untuk meningkatkan keterbacaan */
 }
 
 .stButton > button {
@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box; /* Padding tidak mempengaruhi lebar elemen */
     background-color: #ffffff; /* Latar belakang putih untuk input */
     color: #333; /* Warna teks input */
+    font-size: 16px; /* Ukuran font lebih besar untuk keterbacaan */
 }
 
 .information-box {
