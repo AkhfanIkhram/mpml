@@ -1,0 +1,72 @@
+/* style.css */
+body {
+    background-image: url('https://images.pexels.com/photos/5650026/pexels-photo-5650026.jpeg?auto=compress&cs=tinysrgb&w=600.png');
+    background-size: cover; /* Mengubah ukuran gambar agar menutupi seluruh layar */
+    background-position: center center; /* Menyelaraskan gambar di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    color: white; /* Menyesuaikan warna teks agar terlihat di atas gambar */
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Mengatur tinggi elemen body agar menutupi seluruh viewport */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.stApp {
+    background-color: rgba(0, 0, 0, 0.6); /* Memberikan efek gelap pada latar belakang untuk meningkatkan keterbacaan teks */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px; /* Mengatur lebar maksimal konten */
+    margin: auto; /* Menyelaraskan konten ke tengah */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan untuk efek visual */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700; /* Warna emas untuk judul */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.stButton>button {
+    background-color: #6c5ce7;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #5a4a9f;
+}
+
+.stTextInput>div>label, .stNumberInput>div>label {
+    font-weight: bold;
+    color: white;
+}
+
+.stTextInput input, .stNumberInput input {
+    border-radius: 8px;
+    border: 1px solid #dfe6e9;
+    padding: 10px;
+    width: 100%; /* Memastikan input mengambil lebar penuh */
+    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar elemen */
+}
+
+.information-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparansi untuk informasi tambahan */
+    padding: 20px;
+    border-radius: 10px;
+    color: #2c3e50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk informasi tambahan */
+    margin-top: 30px; /* Ruang atas antara informasi tambahan dan elemen lainnya */
+}
+
+.information-box h2 {
+    font-weight: bold;
+    color: #6c5ce7; /* Warna untuk judul informasi tambahan */
+}
+
+.information-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
