@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 # Mengatur tema dan konfigurasi halaman
 st.set_page_config(
     page_title="Prediksi Status Transaksi UPI",
-    page_icon="💸",
     layout="centered",
     initial_sidebar_state="expanded",
 )
