@@ -94,10 +94,10 @@ if st.button("Prediksi"):
     try:
         result = predict(sender_upi_id, receiver_upi_id, amount_inr)
         if result == 1:
-            st.image("https://www.example.com/success-image.png", use_column_width=True)  # Ganti dengan URL gambar sukses
+            st.image("https://w7.pngwing.com/pngs/698/553/png-transparent-green-check-mark-computer-icons-desktop-success-save-miscellaneous-logo-sphere.png", use_column_width=True)  # Ganti dengan URL gambar sukses
             st.success("Transaksi Sukses 🎉")  # Menambahkan emoji untuk sukses
         else:
-            st.image("https://png.pngtree.com/png-clipart/20210808/original/pngtree-failed-icon-png-image_6612292.jpg", use_column_width=True)  # Ganti dengan URL gambar gagal
+            st.image("https://w7.pngwing.com/pngs/184/645/png-transparent-failed-stamp.png", use_column_width=True)  # Ganti dengan URL gambar gagal
             st.error("Transaksi Gagal 😞")  # Menambahkan emoji untuk gagal
     except Exception as e:
         st.error(f"Error during prediction: {e}")
