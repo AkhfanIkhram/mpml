@@ -94,7 +94,7 @@ if st.button("Prediksi"):
     try:
         result = predict(sender_upi_id, receiver_upi_id, amount_inr)
         if result == 1:
-            st.balloons()
+            st.fireworks()
             st.success("Transaksi Sukses")
         else:
             st.snow()
