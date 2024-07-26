@@ -10,7 +10,7 @@ body {
 }
 
 .stApp {
-    background-color: rgba(250, 249, 249); /* Meningkatkan opasitas latar belakang agar teks lebih jelas */
+    background-image: url('https://i.pinimg.com/474x/7e/88/b8/7e88b83a05bf29625c437a34a23e39d6.jpg'); /* Meningkatkan opasitas latar belakang agar teks lebih jelas */
     padding: 30px; /* Spasi lebih banyak di dalam konten */
     border-radius: 15px; /* Sudut membulat lebih besar */
     max-width: 900px; /* Lebar maksimal konten */
