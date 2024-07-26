@@ -95,10 +95,10 @@ if st.button("Prediksi"):
     try:
         result = predict(sender_upi_id, receiver_upi_id, amount_inr)
         if result == 1:
-            st.balloons()
+            st.markdown('<div class="fireworks-container"><div class="fireworks"></div></div>', unsafe_allow_html=True)
             st.success("Transaksi Sukses")
         else:
-            st.snow()
+            st.markdown('<div class="fire"></div>', unsafe_allow_html=True)
             st.error("Transaksi Gagal")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
