@@ -1,62 +1,66 @@
 body {
     background-image: url('https://img.lovepik.com/background/20211021/medium/lovepik-marble-texture-background-image_401577555.jpg');
-    background-size: cover; /* Memastikan gambar latar menutupi seluruh layar */
-    background-position: center; /* Memusatkan gambar latar */
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar */
-    color: white; /* Warna teks putih agar kontras dengan latar belakang */
-    font-family: Arial, sans-serif; /* Font yang digunakan */
-    height: 100vh; /* Tinggi elemen body setinggi viewport */
+    background-size: cover; /* Menutupi seluruh layar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    color: white; /* Warna teks putih untuk kontras */
+    font-family: 'Arial', sans-serif; /* Font sederhana dan bersih */
+    height: 100vh; /* Tinggi penuh viewport */
     margin: 0; /* Menghilangkan margin default */
 }
 
 .stApp {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparansi hitam untuk latar belakang konten */
-    padding: 20px; /* Spasi di dalam konten */
-    border-radius: 10px; /* Sudut membulat */
+    background-color: rgba(0, 0, 0, 0.7); /* Lebih gelap untuk meningkatkan keterbacaan */
+    padding: 30px; /* Spasi lebih banyak di dalam konten */
+    border-radius: 15px; /* Sudut membulat lebih besar */
     max-width: 900px; /* Lebar maksimal konten */
     margin: auto; /* Menyelaraskan konten ke tengah */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek visual */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Bayangan lebih besar dan lebih lembut */
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang konten */
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #FFD700; /* Warna emas untuk judul */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks untuk keterbacaan */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Bayangan teks yang lebih halus */
 }
 
 .stButton > button {
     background-color: #6c5ce7; /* Warna latar belakang tombol */
     color: white; /* Warna teks tombol */
-    font-weight: bold; /* Tebal teks tombol */
-    border-radius: 8px; /* Sudut membulat tombol */
-    padding: 10px 20px; /* Spasi di dalam tombol */
+    font-weight: bold; /* Teks tebal */
+    border-radius: 12px; /* Sudut membulat lebih besar */
+    padding: 12px 24px; /* Spasi lebih banyak di dalam tombol */
     border: none; /* Menghilangkan border default */
-    cursor: pointer; /* Kursor berubah saat hover */
-    transition: background-color 0.3s; /* Transisi halus untuk perubahan warna latar belakang */
+    cursor: pointer; /* Kursor pointer saat hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi warna dan efek transform */
 }
 
 .stButton > button:hover {
     background-color: #5a4a9f; /* Warna latar belakang tombol saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
 }
 
 .stTextInput > div > label, .stNumberInput > div > label {
-    font-weight: bold; /* Tebal teks label */
+    font-weight: bold; /* Teks label tebal */
     color: white; /* Warna teks label */
 }
 
 .stTextInput input, .stNumberInput input {
-    border-radius: 8px; /* Sudut membulat input */
-    border: 1px solid #dfe6e9; /* Border input */
-    padding: 10px; /* Spasi di dalam input */
+    border-radius: 12px; /* Sudut membulat lebih besar */
+    border: 1px solid #dfe6e9; /* Border abu-abu terang */
+    padding: 12px; /* Spasi lebih banyak di dalam input */
     width: 100%; /* Lebar penuh input */
-    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar elemen */
+    box-sizing: border-box; /* Padding tidak mempengaruhi lebar elemen */
+    background-color: #ffffff; /* Latar belakang putih untuk input */
+    color: #333; /* Warna teks input */
 }
 
 .information-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparansi putih untuk kotak informasi */
+    background-color: rgba(255, 255, 255, 0.9); /* Transparansi putih sedikit lebih jelas */
     padding: 20px; /* Spasi di dalam kotak informasi */
-    border-radius: 10px; /* Sudut membulat kotak informasi */
-    color: #2c3e50; /* Warna teks kotak informasi */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek visual */
+    border-radius: 15px; /* Sudut membulat lebih besar */
+    color: #333; /* Warna teks kotak informasi */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih halus */
     margin-top: 30px; /* Jarak atas antara kotak informasi dan elemen lainnya */
 }
 
@@ -66,5 +70,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .information-box p {
     font-size: 16px; /* Ukuran font untuk paragraf */
-    line-height: 1.5; /* Jarak antar baris teks */
+    line-height: 1.6; /* Jarak antar baris teks */
 }
