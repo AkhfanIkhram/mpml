@@ -94,10 +94,10 @@ if st.button("Prediksi"):
     try:
         result = predict(sender_upi_id, receiver_upi_id, amount_inr)
         if result == 1:
-            st.fireworks()
+            st.balloons()
             st.success("Transaksi Sukses")
         else:
-            st.fireworks()
+            st.balloons()
             st.error("Transaksi Gagal")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
