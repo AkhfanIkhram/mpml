@@ -100,16 +100,4 @@ if st.button("Prediksi"):
 with st.container():
     st.markdown('<div class="information-box">', unsafe_allow_html=True)
     st.header("Informasi Tambahan")
-    st.markdown(
-        """
-        <p>Aplikasi ini menggunakan model machine learning untuk memprediksi status transaksi UPI
-        berdasarkan informasi UPI ID pengirim, UPI ID penerima, dan jumlah transaksi. Prediksi ini
-        bersifat eksperimental dan hanya untuk tujuan edukasi.</p>
-        
-        <p>Penggunaan aplikasi ini tidak menjamin keakuratan 100% dari hasil prediksi yang diberikan.
-        Pastikan untuk memverifikasi hasil prediksi dengan data nyata dan menggunakan aplikasi
-        sesuai dengan kebutuhan dan konteks yang tepat.</p>
-        """,
-        unsafe_allow_html=True
-    )
     st.markdown('</div>', unsafe_allow_html=True)
