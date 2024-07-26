@@ -73,32 +73,4 @@ def predict(sender_upi_id, receiver_upi_id, amount_inr):
 # Membuat antarmuka Streamlit
 st.title("Prediksi Status Transaksi UPI")
 
-# Membuat satu baris dengan tiga kolom
-col1, col2, col3 = st.columns([2, 2, 1])  # Menyesuaikan lebar kolom
 
-with col1:
-    sender_upi_id = st.text_input("Sender UPI ID:", key="sender_upi_id")
-
-with col2:
-    receiver_upi_id = st.text_input("Receiver UPI ID:", key="receiver_upi_id")
-
-with col3:
-    amount_inr = st.number_input("Amount (INR):", min_value=0.0, step=0.01, key="amount_inr")
-
-st.markdown("---")  # Garis pemisah
-
-if st.button("Prediksi"):
-    sender_upi_id = st.session_state.sender_upi_id
-    receiver_upi_id = st.session_state.receiver_upi_id
-    amount_inr = st.session_state.amount_inr
-
-    try:
-        result = predict(sender_upi_id, receiver_upi_id, amount_inr)
-        if result == 1:
-            st.markdown('<div class="fireworks-container"><div class="fireworks"></div></div>', unsafe_allow_html=True)
-            st.success("Transaksi Sukses")
-        else:
-            st.markdown('<div class="fire"></div>', unsafe_allow_html=True)
-            st.error("Transaksi Gagal")
-    except Exception as e:
-        st.error(f"Error during prediction: {e}")
