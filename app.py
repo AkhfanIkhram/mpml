@@ -97,7 +97,7 @@ if st.button("Prediksi"):
             st.fireworks()
             st.success("Transaksi Sukses")
         else:
-            st.snow()
+            st.fireworks()
             st.error("Transaksi Gagal")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
