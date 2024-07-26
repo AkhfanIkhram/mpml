@@ -97,7 +97,3 @@ if st.button("Prediksi"):
         st.error(f"Error during prediction: {e}")
 
 # Informasi tambahan di bagian bawah
-with st.container():
-    st.markdown('<div class="information-box">', unsafe_allow_html=True)
-    st.header("Informasi Tambahan")
-    st.markdown('</div>', unsafe_allow_html=True)
